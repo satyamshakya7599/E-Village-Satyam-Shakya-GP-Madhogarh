@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "complain";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<section style="margin-top:110px;">
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-12">
+<center>
+<div class="fsectiondiv1"><img src="~/Content/complain.png"height="170px"width="50%"></div>
+</center>
+</div>
+</div>
+</section>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6 losectiondiv">
+<center>
+<form action="~/Home/complain" method="post">
+<br><br>
+<input type="text" placeholder="Name"name="name" required class="fsectiondiv2 form-control"><br>
+<input type="number" placeholder="Phone No"name="mob" required class="fsectiondiv2 form-control"><br>
+<input type="email" placeholder="Email(Optional)"name="email" class="fsectiondiv2 form-control"><br>
+<textarea class="fsectiondiv2 form-control"name="msg" required placeholder="Enter Your Complain Here"style="height:100px;"></textarea><br>
+<input type="submit"value="Send Complain" class="form-control btn btn-danger fbtn"><br><br />
+</form>
+</center>
+</div>
+<div class="col-md-3"></div>
+</div>
+<div class="row"style="min-height:40px;"></div>
+</div>

@@ -1,0 +1,294 @@
+.body1
+{
+	background:white;
+}
+.headerlink
+{
+	color:white;
+	text-align:center;
+	margin-top:9px;
+}
+.section1div1
+{
+	font-size:30px;
+	background:navy;
+	border-radius:20px;
+	color:white;
+	text-align:center;
+	min-height:40px;
+}
+.section1div2
+{
+	font-family:"Times New Roman",serif;
+	text-align:justify;
+	font-size:20px;
+}
+.section2div1
+{
+	font-size:30px;
+	text-align:center;
+}
+.section3div1
+{
+	text-align:center;
+	font-size:30px;
+	border-radius:30px;
+	background:navy;
+	color:white;
+	font-variant:small-caps;
+	letter-spacing:2px;
+}
+.section4h2
+{
+	font-family:"Times New Roman",serif;
+}
+.section4p
+{
+	font-family:"Times New Roman",serif;
+	text-align:justify;
+	font-size:18px;
+}
+.section9div1
+{
+	font-size:30px;
+	text-align:center;
+	border-radius:30px;
+	background:navy;
+	color:white;
+}
+.section9div2
+{
+	min-height:200px;
+	text-align:center;
+}
+.section9div3
+{
+	min-height:200px;
+	border:1px solid black;
+}
+.section9div4
+{
+	font-size:39px;
+	text-align:center;
+    background:navy;
+    color:white;
+	border-radius:20px;
+}
+.section10div1
+{
+	text-align:center;
+}
+.section10div2
+{
+	text-align:left;
+}
+.section10div3
+{
+	font-size:24px;
+	text-shadow:1px 1px 1px #008000;
+	color:#008000;
+}
+.section10div5
+{
+	font-size:15px;
+}
+.sectiondiv6
+{
+	color:white;
+}
+.footerdiv1
+{
+	color:white;
+	margin-top:10px;
+	text-align:center;
+}
+.aboutdiv1
+{
+	Font-variant:small-caps;
+	letter-spacing:1px;
+	background:navy;
+	color:white;
+	font-size:31px;
+	border-radius:30px;
+	text-align:center;
+}
+.c-section1div1
+{
+	height:500px;
+	width:100%;
+	background:black;
+	opacity:0.7;
+
+}
+.c-section1div
+{
+	background:url('pexels-chevanon-photography-323503.jpg');
+	background-size:cover;
+}
+.csectiondiv3
+{
+	font-size:70px;
+	margin-top:200px;
+	margin-left:100px;
+	color:white;
+}
+.csectiondiv4
+{
+	height:600px;
+	background:url('pexels-dalila-dalprat-2179214.jpg');
+	background-size:cover;
+}
+.csectiondiv5
+{
+	font-size:40px;
+	color:white;
+	font-family:"Times New Roman",serif;
+	padding-top:400px;
+	margin-left:100px;
+}
+.cform
+{
+	border:2px solid black;
+	font-size:25px;
+	background:#F0F4C3;
+	border-radius:20px;
+}
+.cbutton
+{
+	background:navy;
+	color:white;
+	border-radius:20px;
+	width:200px;
+}
+.cbutton:hover
+{
+	background:	#311b92;
+}
+.ab-section1div
+{
+	background:url('ab.png');
+	background-size:cover;
+}
+.si-section1div
+{
+	height:500px;
+	background:url('signup.jpg');
+	background-size:cover;
+}
+.sisectionform
+{
+	font-family:"Times New Roman",serif;
+	font-size:20px;
+	background:linear-gradient(#AED581,#558B2F);
+	border-radius:20px;
+}
+.sisectionin
+{
+	width:100%;
+	border:1px solid #42a5f5;
+}
+.sibtn
+{
+	background:navy; 
+	color:white;
+	width:90%;
+	border-radius:30px;
+}
+.sisectiondiv
+{
+	background:url('digi.png');
+	background-size:cover;
+	border-radius:20px;
+}
+.sisectiondiv1
+{
+	background:black;
+	opacity:0.6;
+    height:660px;
+    background-size:cover;
+	border-radius:20px;
+}
+.sisectiondiv2
+{
+	color:white;
+	font-size:40px;
+	text-align:center;
+	margin-top:140px;
+}
+.losectiondiv
+{
+	text-align:center;
+	border:1px solid black;
+	background:linear-gradient(#9CCC65,#2E7D32);
+    border-radius:20px;
+}
+.losectiondiv1
+{
+	width:90%;
+	height:40px;
+	font-size:15px;
+}
+.losectiondiv2
+{
+	width:90%;
+	height:38px;
+	background:#00a9a4;
+	color:white;
+	font-size:18px;
+}
+.losectiondiv3
+{
+	text-align:center;
+	font-size:30px;
+}
+.fsectiondiv1
+{
+	margin-top:0px;
+	width:100%;
+}
+.fsectiondiv2
+{
+     font-family:"Times New Roman",serif;
+	font-size:20px;
+	width:90%;
+	height:40px;
+	border:1px solid black;
+
+}
+.fbtn
+{
+	background:#00a9a4;
+	height:40px;
+	width:90%;
+	color:white;
+}
+.simg
+{
+    background-image:url('wallpaperflare.com_wallpaper (1).jpg');
+	background-size:cover;
+}
+.ssectiondiv1
+{
+    height:500px;
+	width:100%;
+	background:black;
+	opacity:0.7;
+	font-size:50px;
+}
+.ssectiondiv2
+{
+	background:maroon;
+	color:white;
+	font-size:25px;
+	text-align:center;
+	border-radius:10px;
+	height:40px;
+}
+.ssectiondiv3
+{
+	
+	color:white;
+	font-family:"Times New Roman",serif;
+	padding-top:300px;
+	margin-left:100px;
+}

@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Updatereg";
+    Layout = "~/Views/Shared/admin master.cshtml";
+}
+@model mvcdemo2.Models.registration
+<div class="Container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+<form action="/Admin/Updatereg" method="post" enctype="multipart/form-data">
+Name:<br>
+<input type="text"placeholder="Name"name="name"value="@Model.name" required class="sisectionin form-control"/><br><br>
+Mobile No:<br>
+<input type="number"placeholder="mobile"name="mob"value="@Model.mob" required class="sisectionin form-control"/><br><br>
+Email:<br>
+<input type="hidden"placeholder="email"name="email"value="@Model.email" required class="sisectionin form-control"/><br><br>
+    Date of Birth:<br>
+<input type="date"placeholder="email"name="dob"value="@Model.dob" required class="sisectionin form-control"/><br><br>
+    Upload Profile:<br />
+    <img src="~/Content/img/@Model.profile"height="50"width="50" /><br /><br />
+    <input type="file"  name="profile"/><br />
+    Qualification:<br />
+    <input type="text"LIst="quali"name="qualification"value="@Model.qualification"placeholder="Select Qualification" required class="sisectionin form-control"/>
+   <datalist id="quali">
+       <option value="B.tech"></option>
+       <option value="M.tech"></option>
+       <option value="Diploma"></option>
+   </datalist>   <br /><br />
+Gender: @{
+    string gender = Model.ToString();
+    if (gender == "Male")
+    { 
+    <input type="radio"name="gender" value="male" checked="checked" />
+    <span>Male</span>
+    <input type="radio" name="gender" value="female" />
+    <span>Female</span>
+    }
+    else
+    {
+    <input type="radio"name="gender" value="male"  />
+    <span>Male</span>
+    <input type="radio" name="gender" value="female" checked="checked"/>
+    <span>Female</span>
+    }
+    }
+    <br><br>
+Password:<br>
+<input type="password"placeholder="password"value="@Model.pass" name="pass" required class="sisectionin form-control"/><br><br>
+    District:<br />
+    <input type="text" placeholder="District"name="district"value="@Model.district"  required class="sisectionin form-control" /><br /><br />
+    Address:<br />
+    <textarea class="sisectionin"name="address" required placeholder="Address"class="form-control" >@Model.address</textarea><br /><br />
+<input type="submit" value="Signup"class="sibtn"style="margin-left:0px;width:100%;"><br /><br />
+</form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>

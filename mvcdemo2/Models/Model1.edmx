@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="projectModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="projectModelStoreContainer">
+          <EntitySet Name="complain" EntityType="projectModel.Store.complain" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="feedback" EntityType="projectModel.Store.feedback" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="inquiry" EntityType="projectModel.Store.inquiry" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="login" EntityType="projectModel.Store.login" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ptable" EntityType="projectModel.Store.ptable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="registration" EntityType="projectModel.Store.registration" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="suggetion" EntityType="projectModel.Store.suggetion" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="complain">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="mob" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="msg" Type="varchar" MaxLength="50" />
+          <Property Name="comlaindate" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="feedback">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="mob" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="msg" Type="varchar" MaxLength="50" />
+          <Property Name="feedbackdate" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="inquiry">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="mob" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="query" Type="varchar" MaxLength="50" />
+          <Property Name="inquirydate" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="login">
+          <Key>
+            <PropertyRef Name="email" />
+          </Key>
+          <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="pass" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ptable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="mob" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="address" Type="varchar" MaxLength="50" />
+          <Property Name="query" Type="varchar" MaxLength="50" />
+          <Property Name="contactdate" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="registration">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="mob" Type="varchar" MaxLength="50" />
+          <Property Name="gender" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="profile" Type="varchar(max)" />
+          <Property Name="qualification" Type="varchar" MaxLength="50" />
+          <Property Name="address" Type="varchar" MaxLength="50" />
+          <Property Name="district" Type="varchar" MaxLength="50" />
+          <Property Name="dob" Type="varchar" MaxLength="50" />
+          <Property Name="regdate" Type="varchar" MaxLength="50" />
+          <Property Name="pass" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="suggetion">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="mob" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="msg" Type="varchar" MaxLength="50" />
+          <Property Name="suggetiondate" Type="varchar" MaxLength="50" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="projectModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="projectEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="complains" EntityType="projectModel.complain" />
+          <EntitySet Name="feedbacks" EntityType="projectModel.feedback" />
+          <EntitySet Name="inquiries" EntityType="projectModel.inquiry" />
+          <EntitySet Name="logins" EntityType="projectModel.login" />
+          <EntitySet Name="ptables" EntityType="projectModel.ptable" />
+          <EntitySet Name="registrations" EntityType="projectModel.registration" />
+          <EntitySet Name="suggetions" EntityType="projectModel.suggetion" />
+        </EntityContainer>
+        <EntityType Name="complain">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mob" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="msg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="comlaindate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="feedback">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mob" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="msg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="feedbackdate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="inquiry">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mob" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="query" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="inquirydate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="login">
+          <Key>
+            <PropertyRef Name="email" />
+          </Key>
+          <Property Name="email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="pass" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="ptable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mob" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="address" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="query" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="contactdate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="registration">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mob" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="gender" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="profile" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="qualification" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="address" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="district" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="dob" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="regdate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="pass" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="suggetion">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mob" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="msg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="suggetiondate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="projectModelStoreContainer" CdmEntityContainer="projectEntities">
+          <EntitySetMapping Name="complains">
+            <EntityTypeMapping TypeName="projectModel.complain">
+              <MappingFragment StoreEntitySet="complain">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="mob" ColumnName="mob" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="msg" ColumnName="msg" />
+                <ScalarProperty Name="comlaindate" ColumnName="comlaindate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="feedbacks">
+            <EntityTypeMapping TypeName="projectModel.feedback">
+              <MappingFragment StoreEntitySet="feedback">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="mob" ColumnName="mob" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="msg" ColumnName="msg" />
+                <ScalarProperty Name="feedbackdate" ColumnName="feedbackdate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="inquiries">
+            <EntityTypeMapping TypeName="projectModel.inquiry">
+              <MappingFragment StoreEntitySet="inquiry">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="mob" ColumnName="mob" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="query" ColumnName="query" />
+                <ScalarProperty Name="inquirydate" ColumnName="inquirydate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="logins">
+            <EntityTypeMapping TypeName="projectModel.login">
+              <MappingFragment StoreEntitySet="login">
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="pass" ColumnName="pass" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ptables">
+            <EntityTypeMapping TypeName="projectModel.ptable">
+              <MappingFragment StoreEntitySet="ptable">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="mob" ColumnName="mob" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="query" ColumnName="query" />
+                <ScalarProperty Name="contactdate" ColumnName="contactdate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="registrations">
+            <EntityTypeMapping TypeName="projectModel.registration">
+              <MappingFragment StoreEntitySet="registration">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="mob" ColumnName="mob" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="profile" ColumnName="profile" />
+                <ScalarProperty Name="qualification" ColumnName="qualification" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="district" ColumnName="district" />
+                <ScalarProperty Name="dob" ColumnName="dob" />
+                <ScalarProperty Name="regdate" ColumnName="regdate" />
+                <ScalarProperty Name="pass" ColumnName="pass" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="suggetions">
+            <EntityTypeMapping TypeName="projectModel.suggetion">
+              <MappingFragment StoreEntitySet="suggetion">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="mob" ColumnName="mob" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="msg" ColumnName="msg" />
+                <ScalarProperty Name="suggetiondate" ColumnName="suggetiondate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

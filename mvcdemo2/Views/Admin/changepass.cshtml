@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "changepass";
+    Layout = "~/Views/Shared/admin master.cshtml";
+}
+
+<section>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<center>
+<div class="fsectiondiv1"><img src="~/Content/Change.png"height="150px;"></div>
+</center>
+</div>
+<div class="col-md-3"></div>
+
+</div>
+</div>
+</section>
+<br /><br />
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<center>
+<form action="/Admin/changepass" method="post">
+<input type="password"placeholder="Current Password"name="oldpass" required class="form-control"><br>
+<input type="password"placeholder="New Password"name="newpass" required class="form-control"><br>
+<input type="password"placeholder="Confirm Password"name="confirmpass" required class="form-control"><br>
+<input type="submit"value="Change Password" class="form-control btn btn-success"><br /><br />
+</form>
+</center>
+</div>
+<div class="col-md-3"></div>
+</div>
+</div>

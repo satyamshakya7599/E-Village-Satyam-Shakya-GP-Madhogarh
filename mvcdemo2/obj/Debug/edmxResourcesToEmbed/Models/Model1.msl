@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="projectModelStoreContainer" CdmEntityContainer="projectEntities">
+    <EntitySetMapping Name="complains">
+      <EntityTypeMapping TypeName="projectModel.complain">
+        <MappingFragment StoreEntitySet="complain">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="msg" ColumnName="msg" />
+          <ScalarProperty Name="comlaindate" ColumnName="comlaindate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="feedbacks">
+      <EntityTypeMapping TypeName="projectModel.feedback">
+        <MappingFragment StoreEntitySet="feedback">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="msg" ColumnName="msg" />
+          <ScalarProperty Name="feedbackdate" ColumnName="feedbackdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inquiries">
+      <EntityTypeMapping TypeName="projectModel.inquiry">
+        <MappingFragment StoreEntitySet="inquiry">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="query" ColumnName="query" />
+          <ScalarProperty Name="inquirydate" ColumnName="inquirydate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logins">
+      <EntityTypeMapping TypeName="projectModel.login">
+        <MappingFragment StoreEntitySet="login">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ptables">
+      <EntityTypeMapping TypeName="projectModel.ptable">
+        <MappingFragment StoreEntitySet="ptable">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="query" ColumnName="query" />
+          <ScalarProperty Name="contactdate" ColumnName="contactdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="registrations">
+      <EntityTypeMapping TypeName="projectModel.registration">
+        <MappingFragment StoreEntitySet="registration">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="profile" ColumnName="profile" />
+          <ScalarProperty Name="qualification" ColumnName="qualification" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="district" ColumnName="district" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="regdate" ColumnName="regdate" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="suggetions">
+      <EntityTypeMapping TypeName="projectModel.suggetion">
+        <MappingFragment StoreEntitySet="suggetion">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="msg" ColumnName="msg" />
+          <ScalarProperty Name="suggetiondate" ColumnName="suggetiondate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

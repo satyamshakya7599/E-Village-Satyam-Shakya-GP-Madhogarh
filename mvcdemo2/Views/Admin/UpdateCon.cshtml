@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "UpdateCon";
+    Layout = "~/Views/Shared/admin master.cshtml";
+}
+@model mvcdemo2.Models.ptable
+<form action="#" method="post">
+<br>
+Name: 
+<input type="text" required placeholder="Your name"name="name"value="@Model.name" class="form-control"><br>
+    Mobile: 
+<input type="number" required placeholder="contact no"name="mob"value="@Model.mob"class="form-control"><br>
+    Email: 
+<input type="hidden"required placeholder="Email"name="email"value="@Model.email"class="form-control"><br>
+    Address: 
+<input type="text"required placeholder="Address"name="address"value="@Model.address"class="form-control"><br>
+    Query: 
+<textarea style="height:70px;" required name="query"class="form-control" placeholder="Enter Query Here">@Model.query</textarea><br />
+
+<input type="submit"value="SUBMIT"class="cbutton form-control btn btn-success" ><br /><br />
+</form>

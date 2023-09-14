@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="projectModel1StoreContainer" CdmEntityContainer="projectEntities3">
+    <EntitySetMapping Name="ptables">
+      <EntityTypeMapping TypeName="projectModel1.ptable">
+        <MappingFragment StoreEntitySet="ptable">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="query" ColumnName="query" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="suggetions">
+      <EntityTypeMapping TypeName="projectModel1.suggetion">
+        <MappingFragment StoreEntitySet="suggetion">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="msg" ColumnName="msg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

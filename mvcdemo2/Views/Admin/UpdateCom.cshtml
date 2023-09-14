@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "UpdateCom";
+    Layout = "~/Views/Shared/admin master.cshtml";
+}
+
+
+@model mvcdemo2.Models.complain
+<form action="#" method="post">
+    <br /><br />
+    Name: 
+<input type="text"placeholder="Enter Name"name="name"value="@Model.name" required class="form-control fsectiondiv2"><br>
+    Mobile: 
+<input type="number"placeholder="Mobile No"name="mob"value="@Model.mob" required class="form-control fsectiondiv2"><br>
+    Email: 
+<input type="hidden"placeholder="Email (Optional)"name="email"value="@Model.email" class="form-control fsectiondiv2"><br>
+    Complain: 
+<textarea placeholder="Enter Your Complain Here"name="msg" required class="form-control fsectiondiv2"style="height:100px;">@Model.msg</textarea><br>
+<input type="submit"value="Send Query"class="form-control btn btn-primary" class="fbtn">
+</form>

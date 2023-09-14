@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Admin Panel</title>
+
+    <!-- Bootstrap Css -->
+    <link href="~/Content/Dash/css/bootstrap.css" rel="stylesheet" />
+    <!-- Bootstrap Css -->
+
+
+    <!-- Common Css -->
+    <link href="~/Content/Dash/css/style.css" rel="stylesheet" />
+    <!--// Common Css -->
+
+
+    <!-- Nav Css -->
+    <link href="~/Content/Dash/css/style3.css" rel="stylesheet" />
+    <!--// Nav Css -->
+
+
+    <!-- Fontawesome Css -->
+    <link href="~/Content/Dash/css/fontawesome-all.css" rel="stylesheet" />
+    <!--// Fontawesome Css -->
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h1>
+                    <a href="/Admin/Index">Admin</a>
+                </h1>
+                <span>M</span>
+            </div>
+            <div class="profile-bg"></div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="/Admin/Index">
+                        <i class="fas fa-th-large"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/indexMGMT">
+                        <i class="fas fa-question"></i>INDEX INQUIRY MGMT
+
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="/Admin/AboutMGMT" >
+                        <i class="fas fa-lightbulb"></i>ABOUT SUGGESTION MGMT
+
+                    </a>
+
+                </li>
+                <li>
+                    <a href="/Admin/ContactMGMT" >
+                        <i class="fas fa-address-book"></i>CONTACTUS MGMT
+
+                    </a>
+
+                </li>
+                <li>
+                    <a href="/Admin/SignupMGMT" >
+                        <i class="fas fa-sign-in-alt"></i>SIGNUP MGMT
+
+                    </a>
+
+                </li>
+                <li>
+                    <a href="/Admin/ComplainMGMT" >
+                        <i class="fas fa-comments"></i>COMPLAINT MGMT
+
+                    </a>
+
+                </li>
+                <li>
+                    <a href="/Admin/FeedbackMGMT">
+                        <i class="fas fa-comments"></i>FEEDBACK MGMT
+
+                    </a>
+
+                </li>
+                 <li>
+                    <a href="/Admin/changepass">
+                        <i class="fas fa-key"></i>Change Password
+
+                    </a>
+
+                </li>
+
+               
+
+
+                <li>
+                    <a href="/Admin/Logout">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+            <!-- top-bar -->
+            <nav class="navbar navbar-default mb-xl-5 mb-4">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <!-- Search-from -->
+                    <form action="#" method="post" class="form-inline mx-auto search-form">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" required="">
+                        <button class="btn btn-style my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <!--// Search-from -->
+                    <ul class="top-icons-agileits-w3layouts float-right">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-user"></i>
+                            </a>
+                            <div class="dropdown-menu drop-3">
+                                <div class="profile d-flex mr-o">
+                                    <div class="profile-l align-self-center">
+                                        <img src="images/profile.jpg" class="img-fluid mb-3" alt="Responsive image">
+                                    </div>
+                                    <div class="profile-r align-self-center">
+                                        <h3 class="sub-title-w3-agileits">Satyam Shakya</h3>
+                                        <a href="mailto:info@example.com">satyam.shakya.7599@gmail.com</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-user mr-3"></i>My Profile</h4>
+                                </a>
+                                <a href="#" class="	dropdown-item mt-3">
+                                    <h4>
+                                        <i class="fas fa-link mr-3"></i>Activity</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-envelope mr-3"></i>Messages</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-question-circle mr-3"></i>Faq</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-thumbs-up mr-3"></i>Support</h4>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/Admin/Logout">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        @RenderBody()
+         <div class="copyright-w3layouts py-xl-3 py-2 mt-xl-5 mt-4 text-center">
+                <p>© 2021 Library Adda24 . All Rights Reserved | Design by
+                    <a href="#">Satyam Shakya</a>
+                </p>
+            </div>
+            <!--// Copyright -->
+        </div>
+    </div>
+    <!-- Required common Js -->
+    <script src="~/Content/Dash/js/jquery-2.2.3.min.js"></script>
+    <!-- //Required common Js -->
+
+
+
+    <!-- Sidebar-nav Js -->
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+    <!-- Js for bootstrap working-->
+    <script src="~/Content/Dash/js/bootstrap.min.js"></script>
+    <!-- //Js for bootstrap working -->
+
+</body>
+</html>

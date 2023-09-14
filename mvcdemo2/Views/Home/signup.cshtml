@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "signup";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<script>
+    function getCaptcha()
+    {
+        var strArr = "0123456789adfgktrdsc";
+        var code = "";
+        for (var i = 0; i < 5; i++)
+        {
+            code = code + strArr[Math.floor(Math.random() * 20)];
+        }
+        return code;
+    }
+    function demo()
+    {
+        var c = getCaptcha();
+        document.getElementById("ct1").innerHTML = c;
+        document.getElementById("hdn1").value = c;
+    }
+</script>
+
+
+<section style="margin-top:45px">
+<div class="container-fluid"data-aos="fade-down">
+<div class="row si-section1div" >
+<div class="c-section1div1">
+<div class="csectiondiv3">Sign Up Here..</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container-fluid">
+    <div class="row">
+<div class="col-md-12">
+<p class="section9div4">SIGNPUP HERE</p>
+</div>
+</div>
+<div class="row">
+    <div class="col-md-2"></div>
+<div class="col-md-8 sisectionform">
+<form action="~/home/signup" method="post" enctype="multipart/form-data">
+Name:<br>
+<input type="text"placeholder="Name"name="name" required class="sisectionin"/><br><br>
+Mobile No:<br>
+<input type="number"placeholder="mobile"name="mob" required class="sisectionin"/><br><br>
+Email:<br>
+<input type="email"placeholder="email"name="email" required class="sisectionin"/><br><br>
+    Date of Birth:<br>
+<input type="date"placeholder="email"name="dob" required class="sisectionin"/><br><br>
+    Upload Profile:<br />
+    <input type="file"  name="profile"/><br />
+    Qualification:<br />
+    <input type="text"LIst="quali"name="qualification"placeholder="Select Qualification" required class="sisectionin"/>
+   <datalist id="quali">
+       <option value="B.tech"></option>
+       <option value="M.tech"></option>
+       <option value="Diploma"></option>
+   </datalist>   <br /><br />
+Gender: &emsp;&emsp;<input type="radio"value="Male" required name="gender"> Male&emsp;&emsp; <input type="radio"value="Female" required name="gender"> Female<br><br>
+Password:<br>
+<input type="password"placeholder="password"name="pass" required class="sisectionin"/><br><br>
+    District:<br />
+    <input type="text" placeholder="District"name="district" required class="sisectionin" /><br /><br />
+    Address:<br />
+    <textarea class="sisectionin"name="address" required placeholder="Address"></textarea><br /><br />
+    Captcha Code:&emsp;&emsp; <span style="color:red;font-size:30px; border:2px solid black;">&emsp;<strike id="ct1">drf4h</strike>&emsp;</span>
+    &emsp;&emsp;<span style="background:black;color:white;font-size:30px;cursor:pointer" onclick="demo()">Refresh</span><br /><br />
+    Enter Captcha:&emsp;&emsp; <input type="text"name="ct1"placeholder="Enter Captcha Code"/>
+    <input type="hidden"id="hdn1"name="hdn1" /><br /><br />
+
+<input type="submit" value="Signup"class="sibtn"style="margin-left:0px;width:100%;"><br /><br />
+</form>
+</div>
+
+</div>
+</div>
+</section>

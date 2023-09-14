@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "login";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<section style="margin-top:104px;">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<img src="~/content/log.png"height="170px">
+</div>
+<div class="col-md-3"></div>
+</div>
+</div>
+</section>
+<div class="container-fluid">
+<div class="row"style="min-height:300px;">
+<div class="col-md-3"></div>
+<div class="col-md-6 losectiondiv">
+<form action="~/Home/login" method="post">
+<br>
+<input type="email"name="email" placeholder="Email"required class="losectiondiv1 form-control"style="margin-top:40px;"><br><br>
+<input type="password"name="pass" placeholder="Password"required class="losectiondiv1 form-control"><br><br>
+<input type="submit" value="Login"class="losectiondiv2 form-control btn btn-danger">
+
+    </form>
+    <div class="row">
+    <div class="col-md-3">
+    <div style="margin-left:0px;"><a href="/home/signup"style="color:black;">New User</a></div>
+
+</div>
+<div class="col-md-6"></div>
+<div class="col-md-3">
+<div style="margin-left:0px;"><a href="/home/forgetpass"style="color:black;">Forgot password?</a></div>
+</div>
+</div>
+</div>
+<div class="col-md-3"></div>
+</div>
+<div class="row"style="min-height:25px;">
+<div class="col-md-4"></div>
+<div class="col-md-4">
+<div class="losectiondiv3"><p><br>Connect With Us</p></div>
+</div>
+<div class="col-md-4"></div>
+</div>
+</div>
+<hr>

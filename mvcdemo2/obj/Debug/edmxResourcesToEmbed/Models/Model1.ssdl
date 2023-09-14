@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="projectModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="projectModelStoreContainer">
+    <EntitySet Name="complain" EntityType="projectModel.Store.complain" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="feedback" EntityType="projectModel.Store.feedback" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="inquiry" EntityType="projectModel.Store.inquiry" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="login" EntityType="projectModel.Store.login" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ptable" EntityType="projectModel.Store.ptable" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="registration" EntityType="projectModel.Store.registration" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="suggetion" EntityType="projectModel.Store.suggetion" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="complain">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="mob" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="msg" Type="varchar" MaxLength="50" />
+    <Property Name="comlaindate" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="feedback">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="mob" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="msg" Type="varchar" MaxLength="50" />
+    <Property Name="feedbackdate" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="inquiry">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="mob" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="query" Type="varchar" MaxLength="50" />
+    <Property Name="inquirydate" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="login">
+    <Key>
+      <PropertyRef Name="email" />
+    </Key>
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="pass" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ptable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="mob" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="address" Type="varchar" MaxLength="50" />
+    <Property Name="query" Type="varchar" MaxLength="50" />
+    <Property Name="contactdate" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="registration">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="mob" Type="varchar" MaxLength="50" />
+    <Property Name="gender" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="profile" Type="varchar(max)" />
+    <Property Name="qualification" Type="varchar" MaxLength="50" />
+    <Property Name="address" Type="varchar" MaxLength="50" />
+    <Property Name="district" Type="varchar" MaxLength="50" />
+    <Property Name="dob" Type="varchar" MaxLength="50" />
+    <Property Name="regdate" Type="varchar" MaxLength="50" />
+    <Property Name="pass" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="suggetion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="mob" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="msg" Type="varchar" MaxLength="50" />
+    <Property Name="suggetiondate" Type="varchar" MaxLength="50" />
+  </EntityType>
+</Schema>
